@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap");
+:root {
+  --font-color: #222222;
+  --background-1: #eeeeee;
+  --background-2: #f6f6f6;
+  --linear-background: linear-gradient(45deg, #ffffff, #eeeeee);
+  --border-menu: 1px solid #ccc;
+  --me: url("../../images/header/me.png");
+  --github: url("../../images/icons/github-light.png");
+  --linkedin: url("../../images/icons/linkedin-light.png");
+  --instagram: url("../../images/icons/instagram-light.png");
+  --email: url("../../images/icons/o-email.png");
+  --zap: url("../../images/icons/whatsapp.png");
+  --wave: url("../../images/waves/wave-light.svg");
+  --wave-2: url("../../images/waves/wave-2-light.svg");
+}
+
+.dark:root {
+  --font-color: #eeeeee;
+  --background-1: #222222;
+  --background-2: #333333;
+  --linear-background: linear-gradient(45deg, #111111, #222222);
+  --border-menu: 1px solid #333;
+  --me: url("../../images/header/me-dark.png");
+  --github: url("../../images/icons/github-dark.png");
+  --linkedin: url("../../images/icons/linkedin-dark.png");
+  --instagram: url("../../images/icons/instagram-dark.png");
+  --email: url("../../images/icons/o-email-dark.png");
+  --zap: url("../../images/icons/whatsapp-dark.png");
+  --wave: url("../../images/waves/wave-dark.svg");
+  --wave-2: url("../../images/waves/wave-2-dark.svg");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Oswald", sans-serif;
+  background-color: var(--background-1);
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+ion-icon {
+  cursor: pointer;
+  font-size: 1.5em;
+  transition: 0.4s;
+}
+
+.return-top {
+  width: 50px;
+  height: 50px;
+  background-color: var(--font-color);
+  z-index: 100;
+  right: 0;
+  bottom: 0;
+  margin: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  color: var(--background-1);
+  opacity: 1;
+  transition: 0.4s;
+  position: fixed;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2549019608);
+}
+.return-top:hover {
+  opacity: 0.8;
+  transition: 0.4s;
+}
+.return-top:hover ion-icon {
+  transform: translateY(-5px);
+  transition: 0.4s;
+}/*# sourceMappingURL=index.css.map */

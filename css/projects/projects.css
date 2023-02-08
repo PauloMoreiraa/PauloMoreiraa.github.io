@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap");
+:root {
+  --font-color: #222222;
+  --background-1: #eeeeee;
+  --background-2: #f6f6f6;
+  --linear-background: linear-gradient(45deg, #ffffff, #eeeeee);
+  --border-menu: 1px solid #ccc;
+  --me: url("../../images/header/me.png");
+  --github: url("../../images/icons/github-light.png");
+  --linkedin: url("../../images/icons/linkedin-light.png");
+  --instagram: url("../../images/icons/instagram-light.png");
+  --email: url("../../images/icons/o-email.png");
+  --zap: url("../../images/icons/whatsapp.png");
+  --wave: url("../../images/waves/wave-light.svg");
+  --wave-2: url("../../images/waves/wave-2-light.svg");
+}
+
+.dark:root {
+  --font-color: #eeeeee;
+  --background-1: #222222;
+  --background-2: #333333;
+  --linear-background: linear-gradient(45deg, #111111, #222222);
+  --border-menu: 1px solid #333;
+  --me: url("../../images/header/me-dark.png");
+  --github: url("../../images/icons/github-dark.png");
+  --linkedin: url("../../images/icons/linkedin-dark.png");
+  --instagram: url("../../images/icons/instagram-dark.png");
+  --email: url("../../images/icons/o-email-dark.png");
+  --zap: url("../../images/icons/whatsapp-dark.png");
+  --wave: url("../../images/waves/wave-dark.svg");
+  --wave-2: url("../../images/waves/wave-2-dark.svg");
+}
+
+#projetos {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10vh;
+}
+@media (max-width: 767px) {
+  #projetos {
+    margin-top: 0;
+  }
+}
+#projetos .projects-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10vh;
+}
+#projetos .projects-title span {
+  font-size: 1.75em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--font-color);
+}
+#projetos .slider-projetos {
+  width: 80%;
+  height: auto;
+}
+@media (max-width: 774px) {
+  #projetos .slider-projetos {
+    width: 100%;
+  }
+}
+#projetos .slider-projetos .projetos .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+#projetos .slider-projetos .projetos .item .card {
+  min-width: 300px;
+  min-height: 200px;
+  width: 90%;
+  height: 100%;
+  background-color: var(--font-color);
+  border-radius: 13px;
+  box-shadow: 0 0 5px #000;
+}
+#projetos .slider-projetos .projetos .item .card img {
+  width: 100%;
+  border-radius: 13px 13px 100px 0;
+}
+#projetos .slider-projetos .projetos .item .card .txt-card {
+  padding: 10px 30px;
+  color: var(--background-1);
+}
+#projetos .slider-projetos .projetos .item .card .txt-card span {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+#projetos .slider-projetos .projetos .item .card .txt-card p {
+  font-size: 1em;
+}
+#projetos .slider-projetos .projetos .item .card a {
+  text-decoration: none;
+  color: var(--background-1);
+  background-color: var(--font-color);
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 13px 13px;
+  padding: 5px 0;
+  transition: 0.4s;
+}
+#projetos .slider-projetos .projetos .item .card a:hover {
+  background-color: var(--background-2);
+  color: var(--font-color);
+  transition: 0.4s;
+}
+#projetos .slider-projetos .arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 700px) {
+  #projetos .slider-projetos .arrows {
+    display: none;
+  }
+}
+#projetos .slider-projetos .arrows .arrow {
+  font-size: 1.75em;
+  color: var(--font-color);
+  padding: 10px;
+  opacity: 1;
+  transition: 0.4s;
+}
+#projetos .slider-projetos .arrows .arrow:hover {
+  opacity: 0.8;
+  transition: 0.4s;
+}/*# sourceMappingURL=projects.css.map */

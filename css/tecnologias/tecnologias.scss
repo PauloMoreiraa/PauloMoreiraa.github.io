@@ -1,0 +1,49 @@
+@import '../vars/vars.scss';
+
+#tecnologias{
+    height: auto;
+    min-height: 60vh;
+    max-height: 70vh;
+    padding: 30vh 0;
+    background-image: var(--wave-2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    
+    @media (max-width: 767px) {
+        padding: 10vh 0;
+    }
+
+    .qualifications-title{
+        font-size: $font-size-3;
+        font-weight: $weight-2;
+        text-transform: uppercase;
+        letter-spacing: $letter-spacing-1;
+        color: var(--font-color);
+        padding-bottom: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 10vh 0;
+    }
+
+    .slider-tecnologias{
+        background-color: transparent;
+        cursor: grab;
+        
+        .tecnologias{
+            height: 30vh;
+
+            .item{
+                background-color: transparent;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img{
+                    width: 200px;
+                }
+            }
+        }
+    }
+}

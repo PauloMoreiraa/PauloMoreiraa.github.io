@@ -1,0 +1,127 @@
+@import '../vars/vars.scss';
+
+#projetos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10vh;
+
+    @media (max-width: 767px) {
+        margin-top: 0;
+    }
+
+    .projects-title{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10vh;
+
+
+        span{
+            font-size: $font-size-3;
+            font-weight: $weight-2;
+            text-transform: uppercase;
+            letter-spacing: $letter-spacing-1;
+            color: var(--font-color);
+        }
+    }
+
+    .slider-projetos{
+        width: 80%;
+        height: auto;
+
+        @media (max-width: 774px){
+            width: 100%;
+        }
+
+        .projetos{
+
+            .item{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+
+                .card{
+                    min-width: 300px;
+                    min-height: 200px;
+                    width: 90%;
+                    height: 100%;
+                    background-color: var(--font-color);
+                    border-radius: $radius;
+                    box-shadow: 0 0 5px #000;
+
+                    img{
+                        width: 100%;
+                        border-radius: $radius $radius 100px 0;
+                    }
+
+                    .txt-card{
+                        padding: 10px 30px;
+                        color: var(--background-1);
+
+                        span{
+                            font-size: $font-size-2;
+                            font-weight: $weight-3;
+                        }
+                        p{
+                            font-size: $font-size-0;
+                        }
+                    }
+
+                    a{
+                        text-decoration: none;
+                        color: var(--background-1);
+                        background-color: var(--font-color);
+                        width: 100%!important;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 0 0 $radius $radius;
+                        padding: 5px 0;
+                        transition: $transition-1;
+                        
+
+                        &:hover{
+                            background-color: var(--background-2);
+                            color: var(--font-color);
+                            transition: $transition-1;
+                        }
+                    }
+                }
+            }
+        }
+        
+
+        .arrows{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width: 700px){
+                display: none;
+            }
+    
+            .arrow{
+                font-size: $font-size-3;
+                color: var(--font-color);
+                padding: 10px;
+                opacity: 1;
+                transition: $transition-1;
+
+                &:hover{
+                    opacity: .8;
+                    transition: $transition-1;
+                }
+            }
+        }
+    }
+
+
+    
+    
+}

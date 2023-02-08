@@ -1,0 +1,57 @@
+@import '../vars/vars.scss';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: $font-family;
+    background-color: var(--background-1);
+}
+
+a{
+    text-decoration: none;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+ion-icon{
+    cursor: pointer;
+    font-size: $font-size-2;
+    transition: $transition-1;
+}
+
+.return-top{
+    width: 50px;
+    height: 50px;
+    background-color: var(--font-color);
+    z-index: 100;
+    right: 0;
+    bottom: 0;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $radius;
+    color: var(--background-1);
+    opacity: 1;
+    transition: $transition-1;
+    position: fixed;
+    box-shadow: 0 0 5px #00000041;
+
+    &:hover{
+        opacity: .8;
+        transition: $transition-1;
+
+        ion-icon{
+            transform: translateY(-5px);
+            transition: $transition-1;
+        }
+    }
+}

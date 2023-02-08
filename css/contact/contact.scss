@@ -1,0 +1,94 @@
+@import '../vars/vars.scss';
+
+
+#contato{
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+
+    .contact-title{
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 15vh;
+
+
+        span{
+            font-size: $font-size-3;
+            font-weight: $weight-2;
+            text-transform: uppercase;
+            letter-spacing: $letter-spacing-1;
+            color: var(--font-color);
+        }
+    }
+
+    .contact-parts{
+        display: flex;
+        height: 70vh;
+        padding: 0 5%;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .card-contact{
+            min-width: 300px;
+            width: 30%;
+            height: auto;
+            max-width: 500px;
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--font-color);
+            margin-top: 5%;
+
+            .icon-1, .icon-2{
+                width: 60px;
+                height: 60px;
+                background-size: cover;
+            }
+
+           .icon-1{
+            background-image: var(--zap);
+           }
+           .icon-2{
+            background-image: var(--email);
+            
+           }
+
+           #cell, #mail{
+            font-size: $font-size-1;
+           }
+
+            p{
+                font-size: $font-size-0;
+                text-align: center;
+            }
+            span{
+                font-size: $font-size-2;
+                font-weight: $weight-3;
+            }
+            .btn{
+                color: var(--background-1);
+                background-color: var(--font-color);
+                padding: 10px 20px;
+                border-radius: $radius;
+                margin-top: 4%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 1;
+                transition: $transition-1;
+
+                &:hover{
+                    opacity: .8;
+                    transition: $transition-1
+                }
+            }
+        }
+    }
+
+    
+}

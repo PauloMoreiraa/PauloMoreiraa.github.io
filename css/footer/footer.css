@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap");
+:root {
+  --font-color: #222222;
+  --background-1: #eeeeee;
+  --background-2: #f6f6f6;
+  --linear-background: linear-gradient(45deg, #ffffff, #eeeeee);
+  --border-menu: 1px solid #ccc;
+  --me: url("../../images/header/me.png");
+  --github: url("../../images/icons/github-light.png");
+  --linkedin: url("../../images/icons/linkedin-light.png");
+  --instagram: url("../../images/icons/instagram-light.png");
+  --email: url("../../images/icons/o-email.png");
+  --zap: url("../../images/icons/whatsapp.png");
+  --wave: url("../../images/waves/wave-light.svg");
+  --wave-2: url("../../images/waves/wave-2-light.svg");
+}
+
+.dark:root {
+  --font-color: #eeeeee;
+  --background-1: #222222;
+  --background-2: #333333;
+  --linear-background: linear-gradient(45deg, #111111, #222222);
+  --border-menu: 1px solid #333;
+  --me: url("../../images/header/me-dark.png");
+  --github: url("../../images/icons/github-dark.png");
+  --linkedin: url("../../images/icons/linkedin-dark.png");
+  --instagram: url("../../images/icons/instagram-dark.png");
+  --email: url("../../images/icons/o-email-dark.png");
+  --zap: url("../../images/icons/whatsapp-dark.png");
+  --wave: url("../../images/waves/wave-dark.svg");
+  --wave-2: url("../../images/waves/wave-2-dark.svg");
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: var(--font-color);
+  padding: 40px 20px;
+}
+footer .links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+footer .links a {
+  color: var(--background-1);
+  margin: 0 5px;
+  font-size: 1.25em;
+  opacity: 1;
+  transition: 0.4s;
+}
+footer .links a:hover {
+  opacity: 0.8;
+  transition: 0.4s;
+}
+footer .dev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .dev span {
+  font-size: 1em;
+  color: var(--background-1);
+  font-weight: 400;
+}/*# sourceMappingURL=footer.css.map */

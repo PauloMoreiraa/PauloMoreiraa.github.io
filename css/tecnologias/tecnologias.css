@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap");
+:root {
+  --font-color: #222222;
+  --background-1: #eeeeee;
+  --background-2: #f6f6f6;
+  --linear-background: linear-gradient(45deg, #ffffff, #eeeeee);
+  --border-menu: 1px solid #ccc;
+  --me: url("../../images/header/me.png");
+  --github: url("../../images/icons/github-light.png");
+  --linkedin: url("../../images/icons/linkedin-light.png");
+  --instagram: url("../../images/icons/instagram-light.png");
+  --wave: url("../../images/waves/wave-light.svg");
+  --wave-2: url("../../images/waves/wave-2-light.svg");
+}
+
+.dark:root {
+  --font-color: #eeeeee;
+  --background-1: #222222;
+  --background-2: #333333;
+  --linear-background: linear-gradient(45deg, #111111, #222222);
+  --border-menu: 1px solid #333;
+  --me: url("../../images/header/me-dark.png");
+  --github: url("../../images/icons/github-dark.png");
+  --linkedin: url("../../images/icons/linkedin-dark.png");
+  --instagram: url("../../images/icons/instagram-dark.png");
+  --wave: url("../../images/waves/wave-dark.svg");
+  --wave-2: url("../../images/waves/wave-2-dark.svg");
+}
+
+#tecnologias {
+  height: auto;
+  min-height: 60vh;
+  max-height: 70vh;
+  padding: 30vh 0;
+  background-image: var(--wave-2);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+@media (max-width: 767px) {
+  #tecnologias {
+    padding: 10vh 0;
+  }
+}
+#tecnologias .qualifications-title {
+  font-size: 1.75em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--font-color);
+  padding-bottom: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 10vh 0;
+}
+#tecnologias .slider-tecnologias {
+  background-color: transparent;
+  cursor: grab;
+}
+#tecnologias .slider-tecnologias .tecnologias {
+  height: 30vh;
+}
+#tecnologias .slider-tecnologias .tecnologias .item {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#tecnologias .slider-tecnologias .tecnologias .item img {
+  width: 200px;
+}/*# sourceMappingURL=tecnologias.css.map */

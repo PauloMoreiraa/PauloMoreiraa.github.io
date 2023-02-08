@@ -1,0 +1,41 @@
+@import '../vars/vars.scss';
+
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--font-color);
+    padding: 40px 20px;
+
+    .links{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+
+        a{
+            color: var(--background-1);
+            margin: 0 5px;
+            font-size: $font-size-1;
+            opacity: 1;
+            transition: $transition-1;
+
+            &:hover{
+                opacity: .8;
+                transition: $transition-1;
+            }
+        }
+    }
+
+    .dev{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span{
+            font-size: $font-size-0;
+            color: var(--background-1);
+            font-weight: $weight-2;
+        }
+    }
+}
