@@ -83,4 +83,17 @@ ion-icon {
 .return-top:hover ion-icon {
   transform: translateY(-5px);
   transition: 0.4s;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--background-1);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--font-color);
+  border-radius: 13px;
 }/*# sourceMappingURL=index.css.map */

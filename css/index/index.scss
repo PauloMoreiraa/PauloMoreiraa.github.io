@@ -55,3 +55,16 @@ ion-icon{
         }
     }
 }
+
+body::-webkit-scrollbar {
+    width: 5px;              
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--background-1);        
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--font-color);
+    border-radius: $radius;       
+  }

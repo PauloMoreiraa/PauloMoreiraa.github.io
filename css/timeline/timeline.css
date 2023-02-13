@@ -9,12 +9,13 @@
   --github: url("../../images/icons/github-light.png");
   --linkedin: url("../../images/icons/linkedin-light.png");
   --instagram: url("../../images/icons/instagram-light.png");
+  --email: url("../../images/icons/o-email.png");
+  --zap: url("../../images/icons/whatsapp.png");
   --wave: url("../../images/waves/wave-light.svg");
   --wave-2: url("../../images/waves/wave-2-light.svg");
 }
 
 .dark:root {
-  --font-color: #eee;
   --font-color: #eeeeee;
   --background-1: #222222;
   --background-2: #333333;
@@ -24,6 +25,8 @@
   --github: url("../../images/icons/github-dark.png");
   --linkedin: url("../../images/icons/linkedin-dark.png");
   --instagram: url("../../images/icons/instagram-dark.png");
+  --email: url("../../images/icons/o-email-dark.png");
+  --zap: url("../../images/icons/whatsapp-dark.png");
   --wave: url("../../images/waves/wave-dark.svg");
   --wave-2: url("../../images/waves/wave-2-dark.svg");
 }
