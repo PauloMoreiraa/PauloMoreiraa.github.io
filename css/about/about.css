@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap");
 :root {
-  --font-color: #222222;
-  --background-1: #eeeeee;
-  --background-2: #f6f6f6;
-  --linear-background: linear-gradient(45deg, #ffffff, #eeeeee);
-  --border-menu: 1px solid #ccc;
+  --font-color: #151730;
+  --background-1: #cfd2ff;
+  --background-2: #aeb4ff;
+  --linear-background: linear-gradient(45deg, #cfd2ff, #aeb4ff);
+  --border-menu: 1px solid #aeb4ff;
   --me: url("../../images/header/me.png");
   --github: url("../../images/icons/github-light.png");
   --linkedin: url("../../images/icons/linkedin-light.png");
@@ -16,11 +16,11 @@
 }
 
 .dark:root {
-  --font-color: #eeeeee;
-  --background-1: #222222;
-  --background-2: #333333;
-  --linear-background: linear-gradient(45deg, #111111, #222222);
-  --border-menu: 1px solid #333;
+  --font-color: #cfd2ff;
+  --background-1: #151730;
+  --background-2: #0f101d;
+  --linear-background: linear-gradient(45deg, #151730, #0f101d);
+  --border-menu: 1px solid #0f101d;
   --me: url("../../images/header/me-dark.png");
   --github: url("../../images/icons/github-dark.png");
   --linkedin: url("../../images/icons/linkedin-dark.png");
@@ -87,7 +87,7 @@
   }
 }
 #sobre .about-parts .about-p1 .img-about {
-  width: 70%;
+  width: 60%;
   border-radius: 13px;
 }
 @media (max-width: 820px) {

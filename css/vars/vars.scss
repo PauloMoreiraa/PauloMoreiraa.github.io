@@ -29,13 +29,13 @@ $radius: 13px;
 //------Light
 :root{
     //fonts
-    --font-color: #222222;
-    --background-1: #eeeeee;
-    --background-2: #f6f6f6;
-    --linear-background: linear-gradient(45deg, #ffffff, #eeeeee);
+    --font-color: #151730;
+    --background-1: #cfd2ff;
+    --background-2: #aeb4ff;
+    --linear-background: linear-gradient(45deg, #cfd2ff, #aeb4ff);
 
     //menu
-    --border-menu: 1px solid #ccc;
+    --border-menu: 1px solid #aeb4ff;
 
     //img
     --me: url('../../images/header/me.png');
@@ -55,13 +55,13 @@ $radius: 13px;
 //------Dark
 .dark:root{
     //fonts
-    --font-color: #eeeeee;
-    --background-1: #222222;
-    --background-2: #333333;
-    --linear-background: linear-gradient(45deg, #111111, #222222);
+    --font-color: #cfd2ff;
+    --background-1: #151730;
+    --background-2: #0f101d;
+    --linear-background: linear-gradient(45deg, #151730, #0f101d);
 
     //menu
-    --border-menu: 1px solid #333;
+    --border-menu: 1px solid #0f101d;
 
     //img
     --me: url('../../images/header/me-dark.png');

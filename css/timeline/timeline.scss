@@ -58,10 +58,18 @@
             .timeline-title{
                 font-weight: $weight-3;
                 font-size: $font-size-3;
+
+                @media (max-width: 1060px) {
+                    font-size: $font-size-1;
+                }
             }
             .timeline-school{
                 font-weight: $weight-2;
                 font-size: $font-size-1;
+
+                @media (max-width: 1060px) {
+                    font-size: $font-size-0;
+                }
             }
 
             .timeline-time{
