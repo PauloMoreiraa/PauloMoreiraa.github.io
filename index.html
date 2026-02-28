@@ -1,267 +1,635 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Paulo Moreira</title>
-    <link rel="shortcut icon" href="images/icons/fav.png" type="image/x-icon">
-    <!--CSS-->
-    <link rel="stylesheet" href="css/index/index.css">
-    <link rel="stylesheet" href="css/header/header.css">
-    <link rel="stylesheet" href="css/main/main.css">
-    <link rel="stylesheet" href="css/about/about.css">
-    <link rel="stylesheet" href="css/timeline/timeline.css">
-    <link rel="stylesheet" href="css/tecnologias/tecnologias.css">
-    <link rel="stylesheet" href="css/projects/projects.css">
-    <link rel="stylesheet" href="css/contact/contact.css">
-    <link rel="stylesheet" href="css/footer/footer.css">
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--SlickJS-->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <title>Paulo Moreira | Desenvolvedor</title>
 
-    <!--AOS-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
 
-</head>
-<body>
-    <a href="#inicio">
-        <div class="return-top">
-            <ion-icon name="arrow-up-outline"></ion-icon>
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <div class="logo-space">
+          <a href="#" class="logo">
+            <span class="logo-paulo">Paulo</span
+            ><span class="logo-moreira">Moreira</span>
+          </a>
         </div>
-    </a>
-    <header>
-        <nav>
-            <a href="/" class="logo">< Paulo<b>Moreira</b> /></a>
-            <div class="mobile-menu">
-                <ion-icon name="grid-outline"></ion-icon>
-            </div>
-            <ul class="nav-list">
-                <li><a href="#sobre">About</a></li>
-                <li><a href="#formacao">Education</a></li>
-                <li><a href="#tecnologias">Technologies</a></li>
-                <li><a href="#projetos">Projects</a></li>
-                <li><a href="#contato">Contact</a></li>
-                <li><a href="#">
-                    <label for="switch">
-                        <input type="checkbox" id="switch"><ion-icon name="sunny-outline"></ion-icon>
-                    </label>   
-                </a></li>
-            </ul>
-        </nav>
+
+        <div class="items-space">
+          <button class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#inicio" data-i18n="menu.home">Início</a></li>
+            <li><a href="#servicos" data-i18n="menu.services">Serviços</a></li>
+            <li><a href="#projetos" data-i18n="menu.projects">Projetos</a></li>
+            <li><a href="#sobre" data-i18n="menu.about">Sobre</a></li>
+            <li><a href="#contato" data-i18n="menu.contact">Contato</a></li>
+
+            <li class="mobile-theme">
+              <button id="themeToggleMobile">
+                <i data-lucide="moon"></i>
+              </button>
+            </li>
+          </ul>
+
+          <div class="theme-wrapper desktop-theme">
+            <button class="theme-toggle" id="themeToggle">
+              <i data-lucide="moon"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main id="inicio">
-        <div class="box-main">
-            <div class="links" data-aos="zoom-in">
-                <a href="https://github.com/PauloMoreiraa" target="_blank"><div class="git"></div></a>
-                <a href="https://www.linkedin.com/in/paulomoreira2004/" target="_blank"><div class="linke"></div></a>
-                <a href="https://www.instagram.com/paulo_mmoreira/" target="_blank"><div class="insta"></div></a>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <span class="hero-badge" data-i18n="hero.badge">
+              Disponível para novos projetos
+            </span>
+
+            <h1 class="hero-title">
+              <span class="hero-paulo">Paulo</span>
+              <span class="hero-moreira">Moreira</span>
+            </h1>
+
+            <p class="hero-description" data-i18n="hero.description">
+              Desenvolvedor Full Stack. Construindo experiências web modernas,
+              responsivas e intuitivas com tecnologias de ponta.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#projetos" class="btn-primary" data-i18n="hero.cta">
+                Ver Projetos
+              </a>
+
+              <a href="./pdf/PauloCV.pdf" class="btn-secondary" target="_blank">
+                <i data-lucide="file-text"></i
+                ><span data-i18n="hero.download">Baixar CV</span>
+              </a>
             </div>
-            <div class="title" data-aos="zoom-in">
-                <p>Hi, I'm</p>
-                <h1>Paulo Moreira</h1>
-                <h2>Software Developer</h2>
+
+            <div class="hero-social">
+              <a
+                aria-label="GitHub"
+                href="https://github.com/PauloMoreiraa"
+                target="_blank"
+              >
+                <i data-lucide="github"></i>
+              </a>
+
+              <a
+                aria-label="LinkedIn"
+                href="https://www.linkedin.com/in/paulomoreira2004/"
+                target="_blank"
+              >
+                <i data-lucide="linkedin"></i>
+              </a>
+
+              <a
+                aria-label="Instagram"
+                href="https://www.instagram.com/paulo_mmoreira/"
+                target="_blank"
+              >
+                <i data-lucide="instagram"></i>
+              </a>
+
+              <a
+                aria-label="TikTok"
+                href="https://www.tiktok.com/@paulo_mmoreira"
+                target="_blank"
+              >
+                <i data-lucide="music-2"></i>
+              </a>
+
+              <a
+                aria-label="WhatsApp"
+                href="https://wa.me/5511963949077"
+                target="_blank"
+              >
+                <i data-lucide="message-circle"></i>
+              </a>
             </div>
-            <div class="photo" data-aos="zoom-in">
-                <div class="img-main"></div>
-            </div>
+          </div>
+
+          <div class="hero-image">
+            <div class="hero-photo"></div>
+          </div>
         </div>
+      </section>
     </main>
-    <section id="sobre">
-        <div class="about-title">
-            <span>about me</span>
-        </div>
-        <div class="about-parts">
-            <div data-aos="zoom-in" class="about-p1">
-                <img src="images/others/me-about.jpeg" alt="Foto Paulo Henrique" class="img-about" />
+
+    <section class="services" id="servicos">
+      <div class="container">
+        <header class="section-header">
+          <h2>Meus Serviços</h2>
+          <span class="line"></span>
+        </header>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">
+              <i data-lucide="user"></i>
             </div>
-            <div data-aos="zoom-in" class="about-p2">
-                <p>Hi there, I'm Paulo Henrique Moreira Martins. I'm passionate about technology, I'm 20 years old, and I'm studying Systems Analysis and Development at the University of São Paulo City with a full scholarship from ProUni.</p>
-                <a href="./pdf/CV-Paulo-FullStack.pdf" download>Download CV&nbsp;<ion-icon name="download-outline"></ion-icon></a>
+
+            <h3>Criação de Portfólios</h3>
+
+            <p>
+              Desenvolvimento de portfólios modernos e atraentes para destacar
+              sua marca pessoal.
+            </p>
+
+            <a href="#contato" class="service-link">
+              Saiba mais
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">
+              <i data-lucide="layout"></i>
             </div>
+
+            <h3>Sites Institucionais</h3>
+
+            <p>
+              Websites profissionais para empresas que buscam consolidar sua
+              presença digital.
+            </p>
+
+            <a href="#contato" class="service-link">
+              Saiba mais
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">
+              <i data-lucide="smartphone"></i>
+            </div>
+
+            <h3>Landing Pages</h3>
+
+            <p>
+              Páginas focadas em conversão, otimizadas para campanhas de
+              marketing.
+            </p>
+
+            <a href="#contato" class="service-link">
+              Saiba mais
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">
+              <i data-lucide="code"></i>
+            </div>
+
+            <h3>Soluções Web</h3>
+
+            <p>
+              Sistemas web personalizados e aplicações Full Stack sob medida.
+            </p>
+
+            <a href="#contato" class="service-link">
+              Saiba mais
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </article>
         </div>
+      </div>
     </section>
-    <section id="formacao">
-        <div class="school-title">
-            <span>Education</span>
+
+    <section class="projects" id="projetos">
+      <div class="container">
+        <header class="section-header">
+          <h2>Projetos</h2>
+          <span class="line"></span>
+        </header>
+
+        <!-- Grid/Scrollable -->
+        <div class="projects-grid">
+          <!-- Projeto 1 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="img/minhas.jpg"
+                alt="Aplicativo React para gerenciamento de finanças pessoais"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/PauloMoreiraa/minhasfinancas-frontend"
+                  target="_blank"
+                  aria-label="GitHub do projeto"
+                >
+                  <i data-lucide="github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Minhas Finanças</h3>
+              <div class="project-stack">
+                <span class="stack-badge">React</span>
+                <span class="stack-badge">Spring Boot</span>
+                <span class="stack-badge">Postgresql</span>
+                <span class="stack-badge">ArcGIS</span>
+              </div>
+              <p class="project-description">
+                Sistema que permite gerenciar ganhos e gastos pessoais,
+                integrando com a API para uma experiência intuitiva e dinâmica.
+              </p>
+            </div>
+          </div>
+
+          <!-- Projeto 2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="img/ficafacil.jpg"
+                alt="Plataforma online para simulados e estudos"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/Deofino/FicaFacil"
+                  target="_blank"
+                  aria-label="GitHub do projeto"
+                >
+                  <i data-lucide="github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Fica Fácil</h3>
+              <div class="project-stack">
+                <span class="stack-badge">React</span>
+                <span class="stack-badge">NodeJS</span>
+                <span class="stack-badge">PHP</span>
+                <span class="stack-badge">Mysql</span>
+              </div>
+              <p class="project-description">
+                Plataforma online que permite testar conhecimentos e acompanhar
+                desempenho em simulados, oferecendo autonomia e acesso
+                facilitado.
+              </p>
+            </div>
+          </div>
+
+          <!-- Projeto 3 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="img/turisp.jpg"
+                alt="Aplicação para explorar pontos turísticos de São Paulo"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/PauloMoreiraa/safeturisp"
+                  target="_blank"
+                  aria-label="GitHub do projeto"
+                >
+                  <i data-lucide="github"></i>
+                </a>
+                <a
+                  href="https://safeturisp.vercel.app/"
+                  target="_blank"
+                  aria-label="Visitar o projeto"
+                >
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>TuriSP</h3>
+              <div class="project-stack">
+                <span class="stack-badge">Vue.js</span>
+                <span class="stack-badge">ArcGIS</span>
+              </div>
+              <p class="project-description">
+                Mapa interativo que mostra pontos turísticos de São Paulo,
+                permitindo explorar cada local com cliques e pop-ups
+                informativos de forma simples e intuitiva.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="img/clone.jpg"
+                alt="Aplicação para fins de marketing acadêmico"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/PauloMoreiraa/Headery-Bootstrap/"
+                  target="_blank"
+                  aria-label="GitHub do projeto"
+                >
+                  <i data-lucide="github"></i>
+                </a>
+                <a
+                  href="https://paulomoreiraa.github.io/Headery-Bootstrap/"
+                  target="_blank"
+                  aria-label="Visitar o projeto"
+                >
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Headery</h3>
+              <div class="project-stack">
+                <span class="stack-badge">HTML</span>
+                <span class="stack-badge">Bootstrap</span>
+                <span class="stack-badge">SCSS</span>
+              </div>
+              <p class="project-description">
+                Landing page para promoção de produtos e serviços médicos com foco acadêmico, oferecendo informações claras, confiáveis e direcionadas a clientes.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="img/marte.jpg"
+                alt="Aplicação de website com curiosidades de Marte"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/PauloMoreiraa/Mars-LP/"
+                  target="_blank"
+                  aria-label="GitHub do projeto"
+                >
+                  <i data-lucide="github"></i>
+                </a>
+                <a
+                  href="https://paulomoreiraa.github.io/Mars-LP/"
+                  target="_blank"
+                  aria-label="Visitar o projeto"
+                >
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Marte</h3>
+              <div class="project-stack">
+                <span class="stack-badge">HTML</span>
+                <span class="stack-badge">SCSS</span>
+                <span class="stack-badge">Javascript</span>
+              </div>
+              <p class="project-description">
+                Website pessoal dedicado a explorar e compartilhar conteúdos sobre a exploração de Marte, reunindo curiosidades, descobertas e avanços científicos sobre o planeta vermelho.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="img/leo.jpg" alt="Portfólio para Psicólogo" />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/PauloMoreiraa/leonardo-psicologo"
+                  target="_blank"
+                  aria-label="GitHub do projeto"
+                >
+                  <i data-lucide="github"></i>
+                </a>
+                <a
+                  href="https://leonardopsicologo.vercel.app/"
+                  target="_blank"
+                  aria-label="Visitar o projeto"
+                >
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Site de Psicólogo</h3>
+              <div class="project-stack">
+                <span class="stack-badge">HTML</span>
+                <span class="stack-badge">CSS</span>
+                <span class="stack-badge">Javascript</span>
+              </div>
+              <p class="project-description">
+                Website profissional para psicólogo, projetado para facilitar o
+                acesso a informações sobre serviços, especialidades e contato,
+                para uma experiência clara e organizada para os pacientes.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="timeline-area">
-            <div class="timeline-card" data-aos="zoom-in" data-aos-delay="0">
-                <span class="timeline-title">Analysis and Development of Systems</span>
-                <span class="timeline-school">Universidade Cidade de São Paulo (UNICID)</span>
-                <span class="timeline-time"><ion-icon name="calendar-outline"></ion-icon>&nbsp;Feb. 2024 - Dec. 2025</span>
-            </div>
-            <div class="timeline-card" data-aos="zoom-in" data-aos-delay="100">
-                <span class="timeline-title">UI/UX Design</span>
-                <span class="timeline-school">Cellep From Facebook</span>
-                <span class="timeline-time"><ion-icon name="calendar-outline"></ion-icon>&nbsp;Sep. 2019 - Dec. 2019</span>
-            </div>
-            <div class="timeline-card" data-aos="zoom-in" data-aos-delay="200">
-                <span class="timeline-title">System Development</span>
-                <span class="timeline-school">Escola Técnica Estadual de São Paulo (ETEC)</span>
-                <span class="timeline-time"><ion-icon name="calendar-outline"></ion-icon>&nbsp;Feb. 2019 - Dec. 2021</span>
-            </div>
-        </div>
+      </div>
     </section>
-    <section id="tecnologias">
-        <div class="qualifications-title">
-            <span>TECHNOLOGIES</span>
-        </div>
-        <div class="slider-tecnologias">
-            <div class="tecnologias">
-              <div class="item">
-                <img src="images/icons/mysql.png" alt="MySQL">
-              </div>
-              <div class="item">
-                <img src="images/icons/html.png" alt="HTML">
-              </div>
-              <div class="item">
-                <img src="images/icons/js.png" alt="JavaScript">
-              </div>
-              <div class="item">
-                <img src="images/icons/css.png" alt="CSS">
-              </div>
-              <div class="item">
-                <img src="images/icons/php.png" alt="PHP">
-              </div>
-              <div class="item">
-                <img src="images/icons/laravel.png" alt="Laravel">
-              </div>
-              <div class="item">
-                <img src="images/icons/react.png" alt="React">
-              </div>
-              <div class="item">
-                <img src="images/icons/ts.png" alt="TypeScript">
-              </div>
-              <div class="item">
-                <img src="images/icons/node.png" alt="TypeScript">
-              </div>
-              <div class="item">
-                <img src="images/icons/mongodb.png" alt="TypeScript">
-              </div>
-              <div class="item">
-                <img src="images/icons/sass.png" alt="TypeScript">
-              </div>
-              <div class="item">
-                <img src="images/icons/sqlserver.png" alt="TypeScript">
-              </div>
-              <div class="item">
-                <img src="images/icons/git.png" alt="TypeScript">
-              </div>
-              <div class="item">
-                <img src="images/icons/java.png" alt="TypeScript">
+
+    <section class="about-me" id="sobre">
+      <div class="container about-container">
+        <h2 class="section-title">Sobre Mim</h2>
+
+        <div class="about-content">
+          <!-- Imagem -->
+          <div class="about-image">
+            <img
+              src="img/foto.png"
+              alt="Paulo Henrique Moreira Martins, Desenvolvedor Full Stack Júnior"
+            />
+          </div>
+
+          <!-- Conteúdo -->
+          <div class="about-text">
+            <p>
+              Olá! Meu nome é <strong>Paulo Henrique Moreira Martins</strong> e
+              sou Desenvolvedor Full Stack. Sou formado em Análise e
+              Desenvolvimento de Sistemas pela
+              <strong>Universidade Cidade de São Paulo (UNICID)</strong> pelo
+              Prouni, e também sou Técnico em Desenvolvimento de Sistemas pela
+              <strong>ETEC de Guaianazes</strong>.
+            </p>
+
+            <p>
+              Gosto de transformar ideias em soluções digitais que ajudam as
+              pessoas no dia a dia. Crio sistemas práticos, fáceis de usar e
+              agradáveis, sempre atento a como tornar a experiência melhor para
+              quem usa. Também fiz diversos cursos de tecnologia e
+              certificações. Meu objetivo é sempre aprender, evoluir e entregar
+              projetos de qualidade.
+            </p>
+
+            <!-- Certificações -->
+            <div class="about-card">
+              <h3 class="card-title">Certificações</h3>
+
+              <ul class="certifications">
+                <li>AWS Partner: Technical Accredited</li>
+                <li>AWS Partner: Sales Accreditation</li>
+                <li>Malvern House London: English - B2</li>
+              </ul>
+            </div>
+
+            <!-- Idiomas -->
+            <div class="about-card">
+              <h3 class="card-title">Idiomas</h3>
+
+              <div class="languages-list">
+                <div class="language-item">
+                  <img src="img/flags/brasil.png" class="flag" />
+                  <span class="lang-label">Português</span>
+                </div>
+
+                <div class="language-item">
+                  <img src="img/flags/reino-unido.png" class="flag" />
+                  <span class="lang-label">Inglês</span>
+                </div>
+
+                <div class="language-item">
+                  <img src="img/flags/espanha.png" class="flag" />
+                  <span class="lang-label">Espanhol</span>
+                </div>
+
+                <div class="language-item">
+                  <img src="img/flags/coreia-do-sul.png" class="flag" />
+                  <span class="lang-label">Coreano</span>
+                </div>
               </div>
             </div>
           </div>
-    </section>
-    <section id="projetos">
-        <div class="projects-title">
-            <span>Projects</span>
         </div>
-        <div class="slider-projetos">
-            <div class="projetos">
-              <div class="item" data-aos="zoom-in">
-                <div class="card">
-                    <img src="images/projetos/clone-netflix.png" alt="Clone Netflix">
-                    <div class="txt-card">
-                        <span>Netflix Clone</span>
-                        <p>Netflix clone project implemented with React and CSS, consuming the TMDB API.</p>
-                    </div>
-                    <a href="https://github.com/PauloMoreiraa/Netflix-Clone" target="_blank">View Project&nbsp;<ion-icon name="link-outline"></ion-icon></a>
-                </div>
-              </div>
-              <div class="item" data-aos="zoom-in">
-                <div class="card">
-                    <img src="images/projetos/GellaGuella.png" alt="Gella Guella">
-                    <div class="txt-card">
-                        <span>Gella Guella</span>
-                        <p>Franchise advertising system developed with Laravel, JavaScript, and CSS.</p>
-                    </div>
-                    <a href="https://github.com/PauloMoreiraa/GellaGuella" target="_blank">View Project&nbsp;<ion-icon name="link-outline"></ion-icon></a>
-                </div>
-              </div>
-              <div class="item" data-aos="zoom-in">
-                <div class="card">
-                    <img src="images/projetos/headery.png" alt="Headery">
-                    <div class="txt-card">
-                        <span>Headery</span>
-                        <p>Landing page built with HTML, JavaScript, jQuery, Bootstrap, and Sass.</p>
-                    </div>
-                    <a href="https://github.com/PauloMoreiraa/Headery-Bootstrap" target="_blank">View Project&nbsp;<ion-icon name="link-outline"></ion-icon></a>
-                </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <div class="container">
+        <div class="contact-card">
+          <header class="contact-header">
+            <h2>Vamos trabalhar juntos!</h2>
+            <p>
+              Tem uma ideia ou um projeto em mente? Entre em contato através das
+              redes sociais ou WhatsApp e vamos transformar sua visão em
+              realidade.
+            </p>
+          </header>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i data-lucide="mail"></i>
               </div>
 
-              <div class="item" data-aos="zoom-in">
-                <div class="card">
-                    <img src="images/projetos/marte.png" alt="Marte">
-                    <div class="txt-card">
-                        <span>Marte</span>
-                        <p>Landing page about human exploration on Mars, crafted using HTML, SCSS and JavaScript.</p>
-                    </div>
-                    <a href="https://paulomoreiraa.github.io/Mars-LP/" target="_blank">View Project&nbsp;<ion-icon name="link-outline"></ion-icon></a>
-                </div>
+              <div>
+                <span class="contact-label">E-mail</span>
+                <a
+                  href="mailto:paulo.martins2004@hotmail.com"
+                  class="contact-value"
+                >
+                  paulo.martins2004@hotmail.com
+                </a>
               </div>
-              
             </div>
-            <div class="arrows">
-                <div class="arrow" id="arrow-prev"><ion-icon name="caret-back-outline"></ion-icon></div>
-                <div class="arrow" id="arrow-next"><ion-icon name="caret-forward-outline"></ion-icon></div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i data-lucide="message-circle"></i>
+              </div>
+
+              <div>
+                <span class="contact-label">WhatsApp</span>
+                <a href="https://wa.me/5511963949077" class="contact-value">
+                  (11) 96394-9077
+                </a>
+              </div>
             </div>
           </div>
+
+          <div class="contact-social">
+            <a
+              aria-label="GitHub"
+              href="https://github.com/PauloMoreiraa"
+              target="_blank"
+            >
+              <i data-lucide="github"></i>
+            </a>
+
+            <a
+              aria-label="LinkedIn"
+              href="https://www.linkedin.com/in/paulomoreira2004/"
+              target="_blank"
+            >
+              <i data-lucide="linkedin"></i>
+            </a>
+
+            <a
+              aria-label="Instagram"
+              href="https://www.instagram.com/paulo_mmoreira/"
+              target="_blank"
+            >
+              <i data-lucide="instagram"></i>
+            </a>
+
+            <a
+              aria-label="TikTok"
+              href="https://www.tiktok.com/@paulo_mmoreira"
+              target="_blank"
+            >
+              <i data-lucide="music-2"></i>
+            </a>
+
+            <a
+              aria-label="WhatsApp"
+              href="https://wa.me/5511963949077"
+              target="_blank"
+            >
+              <i data-lucide="message-circle"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
-    <section id="contato">
-        <div class="contact-title">
-            <span>Contact</span>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-left">
+          <a href="#inicio" class="footer-logo"> Paulo<span>Moreira</span> </a>
+
+          <p class="footer-copy">
+            © 2026 Paulo Henrique Moreira Martins. Todos os direitos reservados.
+          </p>
         </div>
-        <div class="contact-parts" data-aos="zoom-in">
-            <div class="card-contact">
-               <div class="icon-1"></div>
-                <span>Whatsapp:</span>
-                <span id="cell">+55 11 963949077</span>
-                <p>Send me a message!</p>
-                <a class="btn" href="https://api.whatsapp.com/send?phone=5511963949077&text=Ol%C3%A1%2C%20Paulo..." target="_blank"><ion-icon name="send-outline"></ion-icon>&nbsp;Send message</a>
-            </div>
-            <div class="card-contact">
-                <div class="icon-2"></div>
-                <span>E-mail:</span>
-                <span id="mail">paulo.martins2004@hotmail.com</span>
-                <p>Send me an email!</p>
-                <a class="btn" href="mailto:paulo.martins2004@hotmail.com?" target="_blank"><ion-icon name="send-outline"></ion-icon>&nbsp;Send email</a>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="links">
-            <a href="https://github.com/PauloMoreiraa" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
-            <a href="https://www.linkedin.com/in/paulomoreira2004/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-            <a href="https://www.instagram.com/paulo_mmoreira/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-            <a href="https://api.whatsapp.com/send?phone=5511963949077&text=Ol%C3%A1%2C%20Paulo..." target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
-            <a href="mailto:paulo.martins2004@hotmail.com?" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
-        </div>
-        <div class="dev">
-            <span>All rights reserved - Paulo Moreira&copy;</span>
-        </div>
+
+        <nav class="footer-nav" aria-label="Navegação do rodapé">
+          <a href="#inicio">Início</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
     </footer>
 
-<!--Menu Mobile-->
-<script src="js/mobile-menu.js"></script>
-<script src="js/dark-mode.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 
-<!--Ion-Icons-->
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-<!--JQUERY-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-<!--Slick JS-->
-<script src="js/carousel.js"></script>
-
-<!--AOS-->
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-AOS.init();
-</script>
-</body>
+    <script src="js/menu.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/more.js"></script>
+  </body>
 </html>

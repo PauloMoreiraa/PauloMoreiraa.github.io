@@ -1,0 +1,8 @@
+@import url('global.css');
+@import url('./menu/style.css');
+@import url('./main/style.css');
+@import url('./services/style.css');
+@import url('./projects/style.css');
+@import url('./about/style.css');
+@import url('./contact/style.css');
+@import url('./footer/style.css');

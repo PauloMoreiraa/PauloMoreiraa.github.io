@@ -1,0 +1,124 @@
+.about-me {
+  padding: 6rem 0;
+  background: var(--bg-2);
+  min-height: 100vh;
+  height: auto;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.about-content {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.about-image {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.about-image img {
+  width: 400px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.25);
+}
+
+@media (max-width: 1024px){
+	.about-image{
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	.about-image img{
+		width: 220px;
+	}
+}
+
+.about-text {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-2);
+  font-size: var(--font-text);
+  text-align: justify;
+  min-height: 60vh;
+}
+
+.link-highlight {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.about-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 20px; 
+  padding: 20px;
+  margin-top: 1rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-title {
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 12px;
+  font-size: 1.25rem; 
+}
+
+.flag {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.languages-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.language-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--secondary);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: var(--font-badge);
+  font-weight: 600;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--primary);
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+@media (max-width: 1024px) {
+  .about-content {
+    flex-direction: column;
+  }
+}

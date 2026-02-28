@@ -1,0 +1,38 @@
+{
+  "pt": {
+    "menu.home": "Início",
+    "menu.services": "Serviços",
+    "menu.projects": "Projetos",
+    "menu.about": "Sobre",
+    "menu.contact": "Contato",
+    "hero.badge": "Disponível para novos projetos",
+    "hero.description": "Desenvolvedor Full Stack. Construindo experiências web modernas, responsivas e intuitivas com tecnologias de ponta.",
+    "hero.cta": "Ver Projetos",
+    "hero.download": "Baixar CV",
+    "services.title": "Meus Serviços"
+  },
+  "en": {
+    "menu.home": "Home",
+    "menu.services": "Services",
+    "menu.projects": "Projects",
+    "menu.about": "About",
+    "menu.contact": "Contact",
+    "hero.badge": "Available for new projects",
+    "hero.description": "Full Stack Developer. Building modern, responsive and intuitive web experiences with cutting-edge technologies.",
+    "hero.cta": "View Projects",
+    "hero.download": "Download CV",
+    "services.title": "My Services"
+  },
+  "es": {
+    "menu.home": "Inicio",
+    "menu.services": "Servicios",
+    "menu.projects": "Proyectos",
+    "menu.about": "Sobre mí",
+    "menu.contact": "Contacto",
+    "hero.badge": "Disponible para nuevos proyectos",
+    "hero.description": "Desarrollador Full Stack. Construyendo experiencias web modernas, responsivas e intuitivas con tecnologías de vanguardia.",
+    "hero.cta": "Ver Proyectos",
+    "hero.download": "Descargar CV",
+    "services.title": "Mis Servicios"
+  }
+}
