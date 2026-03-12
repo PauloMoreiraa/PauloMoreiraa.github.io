@@ -14,6 +14,25 @@
     />
 
     <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
   </head>
 
   <body>
@@ -44,6 +63,25 @@
               <button id="themeToggleMobile">
                 <i data-lucide="moon"></i>
               </button>
+
+              <div class="lang-select">
+                <div class="lang-selected">
+                  <img src="img/flags/brasil.png" width="30px" />
+                  <span>PT</span>
+                </div>
+
+                <div class="lang-options">
+                  <div class="lang-option" data-lang="pt">
+                    <img src="img/flags/brasil.png" width="30px" />
+                    <span>PT</span>
+                  </div>
+
+                  <div class="lang-option" data-lang="en">
+                    <img src="img/flags/reino-unido.png " width="30px" />
+                    <span>EN</span>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
 
@@ -51,6 +89,24 @@
             <button class="theme-toggle" id="themeToggle">
               <i data-lucide="moon"></i>
             </button>
+            <div class="lang-select">
+              <div class="lang-selected">
+                <img src="img/flags/brasil.png" width="30px" />
+                <span>PT</span>
+              </div>
+
+              <div class="lang-options">
+                <div class="lang-option" data-lang="pt">
+                  <img src="img/flags/brasil.png" width="30px" />
+                  <span>PT</span>
+                </div>
+
+                <div class="lang-option" data-lang="en">
+                  <img src="img/flags/reino-unido.png" width="30px" />
+                  <span>EN</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -138,7 +194,7 @@
     <section class="services" id="servicos">
       <div class="container">
         <header class="section-header">
-          <h2>Meus Serviços</h2>
+          <h2 data-i18n="services.title">Meus Serviços</h2>
           <span class="line"></span>
         </header>
 
@@ -148,15 +204,15 @@
               <i data-lucide="user"></i>
             </div>
 
-            <h3>Criação de Portfólios</h3>
+            <h3 data-i18n="services.portfolio.title">Criação de Portfólios</h3>
 
-            <p>
+            <p data-i18n="services.portfolio.description">
               Desenvolvimento de portfólios modernos e atraentes para destacar
               sua marca pessoal.
             </p>
 
             <a href="#contato" class="service-link">
-              Saiba mais
+              <span data-i18n="services.more">Saiba mais</span>
               <i data-lucide="arrow-right"></i>
             </a>
           </article>
@@ -166,15 +222,15 @@
               <i data-lucide="layout"></i>
             </div>
 
-            <h3>Sites Institucionais</h3>
+            <h3 data-i18n="services.business.title">Sites Institucionais</h3>
 
-            <p>
+            <p data-i18n="services.business.description">
               Websites profissionais para empresas que buscam consolidar sua
               presença digital.
             </p>
 
             <a href="#contato" class="service-link">
-              Saiba mais
+              <span data-i18n="services.more">Saiba mais</span>
               <i data-lucide="arrow-right"></i>
             </a>
           </article>
@@ -184,15 +240,15 @@
               <i data-lucide="smartphone"></i>
             </div>
 
-            <h3>Landing Pages</h3>
+            <h3 data-i18n="services.landing.title">Landing Pages</h3>
 
-            <p>
+            <p data-i18n="services.landing.description">
               Páginas focadas em conversão, otimizadas para campanhas de
               marketing.
             </p>
 
             <a href="#contato" class="service-link">
-              Saiba mais
+              <span data-i18n="services.more">Saiba mais</span>
               <i data-lucide="arrow-right"></i>
             </a>
           </article>
@@ -202,14 +258,14 @@
               <i data-lucide="code"></i>
             </div>
 
-            <h3>Soluções Web</h3>
+            <h3 data-i18n="services.web.title">Soluções Web</h3>
 
-            <p>
+            <p data-i18n="services.web.description">
               Sistemas web personalizados e aplicações Full Stack sob medida.
             </p>
 
             <a href="#contato" class="service-link">
-              Saiba mais
+              <span data-i18n="services.more">Saiba mais</span>
               <i data-lucide="arrow-right"></i>
             </a>
           </article>
@@ -220,13 +276,11 @@
     <section class="projects" id="projetos">
       <div class="container">
         <header class="section-header">
-          <h2>Projetos</h2>
+          <h2 data-i18n="projects.title">Projetos</h2>
           <span class="line"></span>
         </header>
 
-        <!-- Grid/Scrollable -->
         <div class="projects-grid">
-          <!-- Projeto 1 -->
           <div class="project-card">
             <div class="project-image">
               <img
@@ -251,14 +305,13 @@
                 <span class="stack-badge">Postgresql</span>
                 <span class="stack-badge">ArcGIS</span>
               </div>
-              <p class="project-description">
+              <p class="project-description" data-i18n="projects.finance">
                 Sistema que permite gerenciar ganhos e gastos pessoais,
                 integrando com a API para uma experiência intuitiva e dinâmica.
               </p>
             </div>
           </div>
 
-          <!-- Projeto 2 -->
           <div class="project-card">
             <div class="project-image">
               <img
@@ -283,7 +336,7 @@
                 <span class="stack-badge">PHP</span>
                 <span class="stack-badge">Mysql</span>
               </div>
-              <p class="project-description">
+              <p class="project-description" data-i18n="projects.ficafacil">
                 Plataforma online que permite testar conhecimentos e acompanhar
                 desempenho em simulados, oferecendo autonomia e acesso
                 facilitado.
@@ -320,12 +373,14 @@
                 <span class="stack-badge">Vue.js</span>
                 <span class="stack-badge">CSS</span>
               </div>
-              <p class="project-description">
-                Site fictício que apresenta o anúncio de um condomínio, desenvolvido por uma imobiliária, com informações sobre lotes, disponibilidade e contatos para interessados.             
+              <p class="project-description" data-i18n="projects.realestate">
+                Site fictício que apresenta o anúncio de um condomínio,
+                desenvolvido por uma imobiliária, com informações sobre lotes,
+                disponibilidade e contatos para interessados.
               </p>
             </div>
           </div>
-          
+
           <div class="project-card">
             <div class="project-image">
               <img
@@ -355,7 +410,7 @@
                 <span class="stack-badge">Vue.js</span>
                 <span class="stack-badge">ArcGIS</span>
               </div>
-              <p class="project-description">
+              <p class="project-description" data-i18n="projects.turisp">
                 Mapa interativo que mostra pontos turísticos de São Paulo,
                 permitindo explorar cada local com cliques e pop-ups
                 informativos de forma simples e intuitiva.
@@ -393,8 +448,10 @@
                 <span class="stack-badge">Bootstrap</span>
                 <span class="stack-badge">SCSS</span>
               </div>
-              <p class="project-description">
-                Landing page para promoção de produtos e serviços médicos com foco acadêmico, oferecendo informações claras, confiáveis e direcionadas a clientes.
+              <p class="project-description" data-i18n="projects.headery">
+                Landing page para promoção de produtos e serviços médicos com
+                foco acadêmico, oferecendo informações claras, confiáveis e
+                direcionadas a clientes.
               </p>
             </div>
           </div>
@@ -429,8 +486,10 @@
                 <span class="stack-badge">SCSS</span>
                 <span class="stack-badge">Javascript</span>
               </div>
-              <p class="project-description">
-                Website pessoal dedicado a explorar e compartilhar conteúdos sobre a exploração de Marte, reunindo curiosidades, descobertas e avanços científicos sobre o planeta vermelho.
+              <p class="project-description" data-i18n="projects.mars">
+                Website pessoal dedicado a explorar e compartilhar conteúdos
+                sobre a exploração de Marte, reunindo curiosidades, descobertas
+                e avanços científicos sobre o planeta vermelho.
               </p>
             </div>
           </div>
@@ -462,7 +521,7 @@
                 <span class="stack-badge">CSS</span>
                 <span class="stack-badge">Javascript</span>
               </div>
-              <p class="project-description">
+              <p class="project-description" data-i18n="projects.psychologist">
                 Website profissional para psicólogo, projetado para facilitar o
                 acesso a informações sobre serviços, especialidades e contato,
                 para uma experiência clara e organizada para os pacientes.
@@ -475,10 +534,9 @@
 
     <section class="about-me" id="sobre">
       <div class="container about-container">
-        <h2 class="section-title">Sobre Mim</h2>
+        <h2 class="section-title" data-i18n="about.title">Sobre Mim</h2>
 
         <div class="about-content">
-          <!-- Imagem -->
           <div class="about-image">
             <img
               src="img/foto.png"
@@ -486,29 +544,28 @@
             />
           </div>
 
-          <!-- Conteúdo -->
           <div class="about-text">
-            <p>
-              Olá! Meu nome é <strong>Paulo Henrique Moreira Martins</strong> e
-              sou Desenvolvedor Full Stack. Sou formado em Análise e
-              Desenvolvimento de Sistemas pela
+            <p data-i18n="about.text1">
+              Olá! Meu nome é <strong>Paulo Moreira</strong> e sou Desenvolvedor
+              Full Stack. Sou formado em Análise e Desenvolvimento de Sistemas
+              pela
               <strong>Universidade Cidade de São Paulo (UNICID)</strong> pelo
               Prouni, e também sou Técnico em Desenvolvimento de Sistemas pela
               <strong>ETEC de Guaianases</strong>.
             </p>
 
-            <p>
-              Gosto de transformar ideias em soluções digitais que ajudam as
-              pessoas no dia a dia. Crio sistemas práticos, fáceis de usar e
-              agradáveis, sempre atento a como tornar a experiência melhor para
-              quem usa. Também fiz diversos cursos de tecnologia e
-              certificações. Meu objetivo é sempre aprender, evoluir e entregar
-              projetos de qualidade.
+            <p data-i18n="about.text2">
+              Além da minha formação, também busco sempre continuar aprendendo e
+              me aperfeiçoando. Ao longo do tempo conquistei certificações e
+              realizei diversos cursos na área de tecnologia, que complementam
+              minha formação e ampliam meus conhecimentos. Esses estudos me
+              ajudam a desenvolver projetos com mais qualidade, organização e
+              atenção aos detalhes, sempre buscando evoluir e melhorar como
+              profissional.
             </p>
 
-            <!-- Certificações -->
             <div class="about-card">
-              <h3 class="card-title">Certificações</h3>
+              <h3 class="card-title" data-i18n="about.certifications">Certificações</h3>
 
               <ul class="certifications">
                 <li>AWS Partner: Technical Accredited</li>
@@ -517,29 +574,23 @@
               </ul>
             </div>
 
-            <!-- Idiomas -->
             <div class="about-card">
-              <h3 class="card-title">Idiomas</h3>
+              <h3 class="card-title" data-i18n="about.languages">Idiomas</h3>
 
               <div class="languages-list">
                 <div class="language-item">
                   <img src="img/flags/brasil.png" class="flag" />
-                  <span class="lang-label">Português</span>
+                  <span class="lang-label" data-i18n="about.lang.pt">Português</span>
                 </div>
 
                 <div class="language-item">
                   <img src="img/flags/reino-unido.png" class="flag" />
-                  <span class="lang-label">Inglês</span>
+                  <span class="lang-label" data-i18n="about.lang.en">Inglês</span>
                 </div>
 
                 <div class="language-item">
                   <img src="img/flags/espanha.png" class="flag" />
-                  <span class="lang-label">Espanhol</span>
-                </div>
-
-                <div class="language-item">
-                  <img src="img/flags/coreia-do-sul.png" class="flag" />
-                  <span class="lang-label">Coreano</span>
+                  <span class="lang-label" data-i18n="about.lang.es">Espanhol</span>
                 </div>
               </div>
             </div>
@@ -552,8 +603,8 @@
       <div class="container">
         <div class="contact-card">
           <header class="contact-header">
-            <h2>Vamos trabalhar juntos!</h2>
-            <p>
+            <h2 data-i18n="contact.title">Vamos trabalhar juntos!</h2>
+            <p data-i18n="contact.text">
               Tem uma ideia ou um projeto em mente? Entre em contato através das
               redes sociais ou WhatsApp e vamos transformar sua visão em
               realidade.
@@ -585,7 +636,7 @@
               <div>
                 <span class="contact-label">WhatsApp</span>
                 <a href="https://wa.me/5511963949077" class="contact-value">
-                  (11) 96394-9077
+                  +55 11 96394-9077
                 </a>
               </div>
             </div>
@@ -641,17 +692,17 @@
         <div class="footer-left">
           <a href="#inicio" class="footer-logo"> Paulo<span>Moreira</span> </a>
 
-          <p class="footer-copy">
+          <p class="footer-copy" data-i18n="footer.copy">
             © 2026 Paulo Henrique Moreira Martins. Todos os direitos reservados.
           </p>
         </div>
 
         <nav class="footer-nav" aria-label="Navegação do rodapé">
-          <a href="#inicio">Início</a>
-          <a href="#servicos">Serviços</a>
-          <a href="#projetos">Projetos</a>
-          <a href="#sobre">Sobre</a>
-          <a href="#contato">Contato</a>
+          <a href="#inicio" data-i18n="footer.home">Início</a>
+          <a href="#servicos" data-i18n="footer.services">Serviços</a>
+          <a href="#projetos" data-i18n="footer.projects">Projetos</a>
+          <a href="#sobre" data-i18n="footer.about">Sobre</a>
+          <a href="#contato" data-i18n="footer.contact">Contato</a>
         </nav>
       </div>
     </footer>
@@ -665,5 +716,6 @@
     <script src="js/menu.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/more.js"></script>
+    <script src="js/lang.js"></script>
   </body>
 </html>
