@@ -12,6 +12,7 @@
   --social-bg: #f8f8f8;
 
   --gradient: linear-gradient(90deg, #2563eb, #7c3aed);
+  --gradient-2: linear-gradient(270deg, #2563eb, #7c3aed);
   --font-logo: 3.5rem;
   --font-title: 1.6rem;
   --font-text: 1rem;
