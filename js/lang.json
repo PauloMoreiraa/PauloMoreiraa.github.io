@@ -1,5 +1,6 @@
 {
   "pt": {
+    "page.title": "Paulo Moreira | Desenvolvedor",
     "menu.home": "Início",
     "menu.services": "Serviços",
     "menu.projects": "Projetos",
@@ -45,6 +46,7 @@
     "footer.contact": "Contato"
   },
   "en": {
+    "page.title": "Paulo Moreira | Developer",
     "menu.home": "Home",
     "menu.services": "Services",
     "menu.projects": "Projects",
