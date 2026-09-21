@@ -12,8 +12,6 @@ interface ProfileCardProps {
 export default function ProfileCard({
   images = homeAssets.profileImages,
   imageAlt = homeAssets.profileImageAlt,
-  location = "SÃO PAULO, SP · BRAZIL",
-  showLocation = true,
 }: ProfileCardProps) {
   const [currentImage, setCurrentImage] = useState(0)
 
