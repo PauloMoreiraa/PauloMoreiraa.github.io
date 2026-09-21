@@ -169,7 +169,7 @@ export const projects: Project[] = [
     description:
       "A professional website created for a psychologist, presenting services, specialties, and contact information through a clear, organized, and accessible experience for potential patients.",
     technologies: [
-      "React",
+      "Typescript",
       "Tailwind CSS",
     ],
     projectUrl:
@@ -177,4 +177,21 @@ export const projects: Project[] = [
     githubUrl:
       "https://github.com/PauloMoreiraa/leonardo-psicologo",
   },
+  {
+    id: 10,
+    name: "Veterinary Clinic Website",
+    image: "https://images.unsplash.com/photo-1596272875729-ed2ff7d6d9c5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    shortDescription:
+      "A modern website designed for a fictional veterinary clinic and its services.",
+    description:
+      "A modern website created for a fictional veterinary clinic, presenting veterinary services, specialties, information about the clinic, and contact details through a clean, friendly, and accessible experience for pet owners.",
+    technologies: [
+      "TypeScript",
+      "Tailwind CSS",
+    ],
+    projectUrl:
+      "https://clinica-veterinaria-frontend.vercel.app/",
+    githubUrl:
+      "https://github.com/PauloMoreiraa/clinica-veterinaria",
+  }
 ] 
