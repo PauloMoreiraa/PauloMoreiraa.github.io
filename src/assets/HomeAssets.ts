@@ -2,8 +2,8 @@ export const homeAssets = {
   profileImageAlt: "Paulo Moreira profile photo",
 
   profileImages: [
-    "/public/pixel1.png",
-    "/public/nit1.jpeg",
+    "/img/pixel1.png",
+    "/img/nit1.jpeg",
   ],
 
 
