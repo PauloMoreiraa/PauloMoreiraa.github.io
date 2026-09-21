@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --arcade-black: #0e0b14;
+  --arcade-dark: #17121f;
+  --arcade-panel: #211a2d;
+
+  --arcade-red: #ff3b3b;
+  --arcade-yellow: #f6c945;
+  --arcade-blue: #365cff;
+  --arcade-green: #24d36b;
+  --arcade-pink: #ff4fa3;
+  --arcade-purple: #7c4dff;
+
+  --arcade-cream: #f4ebd0;
+
+  --arcade-shadow: #000000;
+}
+
+.dark {
+  --arcade-shadow: #4e465e;
+}
+html {
+  scroll-behavior: smooth!important;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: var(--arcade-cream);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+
+  background: var(--arcade-cream);
+  color: var(--arcade-black);
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.dark body {
+  background: var(--arcade-black);
+  color: var(--arcade-cream);
+}
+
+.font-pixel {
+  font-family: "Press Start 2P", monospace;
+}
+
+::selection {
+  background: var(--arcade-red);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--arcade-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--arcade-red);
+  border: 3px solid var(--arcade-black);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--arcade-yellow);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
